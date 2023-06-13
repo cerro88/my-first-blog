@@ -1,0 +1,26 @@
+{% load static %}
+<html>
+    <head>
+        <title>Django Girls blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+        <div class="page-header">
+            <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+            <h1><a href="/">CERVECERIA GB</a></h1>
+            <button>Reservas</button>
+        </div>
+        
+        <div class="content container">
+            <div class="row">
+            <div class="col-md-8">
+              
+                <img src="https://fotografias.larazon.es/clipping/cmsimages02/2020/05/23/9177B7D1-D1DA-4352-B92E-FC62CDCD8C40/98.jpg" alt="cerveza" width="310" height="225" style="float: right;"style="float: right;">
+                <img src="https://www.cervezasalhambra.com/themes/alhambra/assets/img/1925-maestros-del-tiempo/img-maestros-dsk-home.jpg" alt="alambra" width="400 height=300">
+                <img src="https://i0.wp.com/distribucionesllorente.es/wp-content/uploads/2017/11/tipos-de-cerveza-cerveza-espa%C3%B1ola-alhambra-reserva-1925-mejor-cerveza-espa%C3%B1ola.jpg" alt="" width="400 height=300" style="float: left;">
+        </div>
+    </body>
+</html>
